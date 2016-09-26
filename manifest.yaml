@@ -1,0 +1,11 @@
+Format: 1.0
+Type: Application
+FullName: io.murano.apps.AlanLoDemo.Walma
+Name: Walma Demo v20160926
+Description: |
+  https://github.com/AlanCLo/MuranoWalmaExample
+  An example Murano package for the Nectar cloud (http://nectar.org.au/) that deploys Walma 1.6.0 (https://github.com/ether/etherpad-lite/tree/1.6.0)
+Author: 'alan.lo@unimelb.edu.au'
+Tags: [HTTP Collaboration Tool]
+Classes:
+ io.murano.apps.AlanLoDemo.Walma: Walma.yaml
