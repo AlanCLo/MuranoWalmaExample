@@ -36,6 +36,8 @@ Dependencies
 
 Check the Murano's quickstart guide here: http://docs.openstack.org/developer/murano/enduser-guide/quickstart.html
 
+Once the deployment is complete, point your web browser to the IP address of the new server displayed on the Nectar Dashboard.
+
 ## Setup
 
 This package performs a simple deployment of Walma git version f6fb11d47feaa1597cfd1aacbf8d09aeaff3f769 on a single Ubuntu server with the following configuration:
