@@ -9,7 +9,7 @@ Templates:
 
 Application:
   ?:
-    type: io.murano.apps.AlanLoDemo.Etherpad
+    type: io.murano.apps.AlanLoDemo.Walma
   instance:
     ?:
       type: io.murano.resources.LinuxMuranoInstance
@@ -28,14 +28,14 @@ Forms:
       fields:
         - name: license
           type: string
-          description: Apache License, Version 2.0
+          description: GPL2
           hidden: true
           required: false
         - name: flavor
           type: flavor
           label: Instance flavor
           requirements:
-            min_disk: 5
+            min_disk: 10
           description: >-
             Known to work with m1.medium
           required: true
@@ -44,7 +44,7 @@ Forms:
           imageType: linux
           label: Instance image
           description: >-
-            Known to work with NeCTAR Ubuntu 16.04 LTS (Xenial) amd64 (pre-install murano-agent)
+            Known to work with NeCTAR Ubuntu 14.04 (Trusty) amd64. Walma needs old versions of nodejs. Do not use Ubuntu images later than 14.04
         - name: keyPair
           type: keypair
           label: Key Pair
