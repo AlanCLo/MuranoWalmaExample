@@ -4,7 +4,8 @@ FullName: io.murano.apps.AlanLoDemo.Walma
 Name: Walma Demo v20160926
 Description: |
   https://github.com/AlanCLo/MuranoWalmaExample
-  An example Murano package for the Nectar cloud (http://nectar.org.au/) that deploys Walma git version f6fb11d47feaa1597cfd1aacbf8d09aeaff3f769 (https://github.com/opinsys/walma)
+  
+  Collaborative whiteboard tool for the browser
 Author: 'alan.lo@unimelb.edu.au'
 Tags: [HTTP Collaboration Tool]
 Classes:
