@@ -1,6 +1,6 @@
 # Murano Walma Whiteboard Example.
 
-This is a Murano package that deploys Walma designed for the Nectar cloud. Walma is a collaborative whiteboard that works on and modern web browser. It is intended to be a useful application for general purposes and also provide a reference implementation from The University of Melbourne's Nectar community.
+This Murano package designed for the Nectar cloud deploys Walma. Walma is a collaborative whiteboard that works on any modern web browser. It is intended to be a useful application for general purposes and also provides a reference implementation as a contribution from The University of Melbourne's Nectar community.
 
 **This setup is not designed to be a long-standing Walma server**. Start a new instance of Walma with Murano and use it for your workshop/conference/etc for the next few days. Once you are done you should shutdown the instance from Nectar dashboard.
 
@@ -29,7 +29,7 @@ zip -r DemoWalma.zip manifest.yaml Classes/Walma.yaml Resources/Deploy.template 
 ## Using the Murano package
 
 Dependencies
-* NeCTAR Ubuntu 14.04 (Trusty) amd64 (**Special Note**: Walma needs to run on older versions of nodejs which does not come in more recent versions of Ubuntu)
+* NeCTAR Ubuntu 14.04 (Trusty) amd64 (**Special Note**: Walma needs to run on older versions of Node.js which does not come in more recent versions of Ubuntu)
 * Minimum Root Disk size: 10GB
 
 Check the Murano's quickstart guide here: http://docs.openstack.org/developer/murano/enduser-guide/quickstart.html
