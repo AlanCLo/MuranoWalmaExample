@@ -10,6 +10,9 @@ sudo apt-get install -y mongodb-org
 ## Install package dependencies
 sudo apt-get install -y git nodejs-legacy npm supervisor nginx 
 
+## Make a user to run walma with
+adduser --disabled-password --disabled-login --gecos "" walma
+
 ## Fetch software, configure and install
 cd /opt
 git clone git://github.com/opinsys/walma.git
@@ -17,6 +20,7 @@ cd walma
 git checkout f6fb11d47feaa1597cfd1aacbf8d09aeaff3f769
 npm install
 bin/setupdb
+chown -R walma:walma .
 
 ## Strip out the google analytics they left in the source code
 sed -i '/<script type="text\/javascript"/,/<\/script>/d' views/index.jade
@@ -27,7 +31,7 @@ cat << EOT >> /etc/supervisor/conf.d/walma.conf
 [program:walma]
 directory=/opt/walma
 command=npm start
-user=ubuntu
+user=walma
 autostart=true
 autorestart=true
 stderr_logfile=/var/log/walma.err.log
