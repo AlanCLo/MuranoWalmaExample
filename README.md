@@ -41,7 +41,9 @@ Once the deployment is complete, point your web browser to the IP address of the
 ## Setup
 
 This package performs a simple deployment of Walma git version f6fb11d47feaa1597cfd1aacbf8d09aeaff3f769 on a single Ubuntu server with the following configuration:
-* Walma runs directly on port 80 (http)
+* Server only permits http (80), https (443), and ssh (20) connections
+* Walma runs on port 1337 as **ubuntu** user
+* Nginx will pass traffic from port 80 to Walma on 1337
 * Walma is process controlled by supervisord to automatically restart
 * Data is stored locally on mongodb
 
